@@ -1,0 +1,12 @@
+
+
+using SystemTime = std::chrono::steady_clock;
+using ms = std::chrono::milliseconds;
+
+using float_sec = std::chrono::duration<double>;
+using float_time_point = std::chrono::time_point<SystemTime, float_sec>;
+
+float_time_point last;
+float_time_point now;
+double dt;
+double fps;
